@@ -9,8 +9,14 @@ repository = "https://github.com/magnet/metered-rs"
 description = """
 Fast, ergonomic metrics for Rust!
 """
-categories = ["rust-patterns", "development-tools::profiling", "data-structures", "algorithms", "asynchronous"]
-edition = "2018"
+categories = [
+    "rust-patterns",
+    "development-tools::profiling",
+    "data-structures",
+    "algorithms",
+    "asynchronous",
+]
+edition = "2021"
 
 [dependencies]
 metered-macro = { version = "0.9.0", path = "../metered-macro" }
@@ -34,5 +40,6 @@ serialize = []
 
 # When enabled, the error count macro will skip serializing cleared entries (e.g counters with value 0)
 # This can be overridden with the `skip_cleared` macro attribute
-error-count-skip-cleared-by-default = ["metered-macro/error-count-skip-cleared-by-default"]
-
+error-count-skip-cleared-by-default = [
+    "metered-macro/error-count-skip-cleared-by-default",
+]

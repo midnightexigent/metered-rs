@@ -9,11 +9,17 @@ repository = "https://github.com/magnet/metered-rs"
 description = """
 Fast, ergonomic metrics for Rust!
 """
-categories = ["rust-patterns", "development-tools::profiling", "data-structures", "algorithms", "asynchronous"]
-edition = "2018"
+categories = [
+    "rust-patterns",
+    "development-tools::profiling",
+    "data-structures",
+    "algorithms",
+    "asynchronous",
+]
+edition = "2021"
 
 [dependencies]
-syn = {version= "1.0", features = ["full"] }
+syn = { version = "1.0", features = ["full"] }
 aspect-weave = "0.2"
 synattra = "0.2"
 quote = "1.0"
